@@ -9,9 +9,12 @@ public class UnitTest1
     {
         var steps = CiCdGuide.GetSteps();
 
-        Assert.Equal(3, steps.Length);
-        Assert.Contains("GitHub Actions", steps[0]);
-        Assert.Contains("CI", steps[1]);
-        Assert.Contains("CD", steps[2]);
+        Assert.Equal(
+            [
+                "1. Push code or open a pull request to trigger GitHub Actions.",
+                "2. CI restores dependencies, builds the .NET app, and runs tests.",
+                "3. CD publishes the app artifact from the main branch after CI passes."
+            ],
+            steps);
     }
 }
