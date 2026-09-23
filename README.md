@@ -10,7 +10,7 @@ Repository for learning GitHub CI/CD with a simple .NET app.
 
 ## GitHub CI/CD flow
 
-1. Push code or open a pull request to `main`.
+1. Push changes to `main` or open a pull request targeting `main`.
 2. GitHub Actions runs the **build-test** job:
    - restore NuGet packages
    - build the .NET solution
