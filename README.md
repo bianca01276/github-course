@@ -21,7 +21,9 @@ Repository for learning GitHub CI/CD with a simple .NET app.
 
 ## Run locally
 
+Run these commands from the repository root:
+
 ```bash
-dotnet test /home/runner/work/github-course/github-course/tests/SimpleApp.Tests/SimpleApp.Tests.csproj
-dotnet run --project /home/runner/work/github-course/github-course/src/SimpleApp/SimpleApp.csproj
+dotnet test tests/SimpleApp.Tests/SimpleApp.Tests.csproj
+dotnet run --project src/SimpleApp/SimpleApp.csproj
 ```
